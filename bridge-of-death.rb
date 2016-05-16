@@ -4,21 +4,21 @@ name = gets.chomp
 puts "What...is your quest?"
 quest = gets.chomp
 
-if name.downcase == "arthur"; 
+if name =~ /\barthur\b/i; 
     puts "What is the airspeed velocity of a coconut laden swallow?"
     swallow = gets.chomp
       if swallow.downcase == "african or european"
       puts "I don't know that! AAAAAAAAAAAAaaaaaaaaaahhhhhhh!!!"
       else puts "You have been cast into the Gorge of Eternal Peril!"
     end
-  elsif name.downcase == "lancelot";
+  elsif name =~ /\blancelot\b/i;
     puts "What is your favorite color?"
     colour = gets.chomp
     if colour.downcase == "blue"; 
       puts "Alright, off you go!"
       else puts "You have been cast into the Gorge of Eternal Peril!"
     end
-  elsif name.downcase == "robin";
+  elsif name =~ /\brobin\b/i;
     puts "What is your favorite color?"
     color = gets.chomp
     if color.downcase != "yellow"; 
